@@ -1,0 +1,33 @@
+## Visual Studio & .NET .gitignore
+
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# NuGet packages & cache
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# Windows thumbnail & desktop config
+Thumbs.db
+ehthumbs.db
+Desktop.ini
