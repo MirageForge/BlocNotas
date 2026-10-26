@@ -1,0 +1,25 @@
+﻿<Window x:Class="MiBlocDeNotas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mi Bloc de Notas" Height="450" Width="800">
+    <DockPanel>
+        <!-- Menú superior -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Archivo">
+                <MenuItem Header="_Nuevo" x:Name="MenuNuevo" Click="MenuNuevo_Click"/>
+                <MenuItem Header="_Abrir..." x:Name="MenuAbrir" Click="MenuAbrir_Click"/>
+                <MenuItem Header="_Guardar" x:Name="MenuGuardar" Click="MenuGuardar_Click"/>
+                <Separator/>
+                <MenuItem Header="_Salir" x:Name="MenuSalir" Click="MenuSalir_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Área de texto principal -->
+        <TextBox x:Name="txtContenido" 
+                 AcceptsReturn="True" 
+                 TextWrapping="Wrap" 
+                 VerticalScrollBarVisibility="Auto"
+                 FontFamily="Consolas" 
+                 FontSize="14"/>
+    </DockPanel>
+</Window>
